@@ -11,7 +11,7 @@ app.use( cors() )
 
 app.get("/find/:country", (req, res) => {
 
-	const crudeData = readFileSync( "./geo.json", {
+	const crudeData = readFileSync( "./custom.geo.json", {
 		encoding: "utf-8",
 		flag: "r"
 	} )
